@@ -1,0 +1,29 @@
+<!-- project_details_all.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Projects Details</title>
+
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <h1>All Projects Details</h1>
+
+    <ul>
+        {% for project in projects %}
+            <li>
+                <h3>{{ project.title }}</h3>
+                <p>{{ project.overview }}</p>
+                <p><strong>Tools:</strong> {{ ', '.join(project.tools) }}</p>
+                <p><a href="{{ url_for('project', project_id=loop.index0) }}">Details</a></p>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <!-- Add more details or customize as needed -->
+</body>
+</html>

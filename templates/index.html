@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dominic Apolo's Portfolio</title>
+
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+<body>
+    <h1>Dominic Apolo - Portfolio</h1>
+
+    <div style="background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <h2>About Me</h2>
+        <p>{{ about_me }}</p>
+    </div>
+
+    <div style="background-color: #fff; padding: 20px; margin-top: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <h2>Skills</h2>
+        <ul>
+            {% for skill in skills %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+    </div>
+
+    <div style="background-color: #fff; padding: 20px; margin-top: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <h2>Projects</h2>
+        <ul>
+                <li>
+                    <a href="{{ url_for('project_all') }}">View All Projects</a>
+                </li>
+        </ul>
+    </div>  
+
+    <!-- Contact Information -->
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <ul>
+            <li><strong>GitHub:</strong> <a href="https://github.com/dom2polo" target="_blank">github.com</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/dominic-apolo-9bbb27204" target="_blank">linkedin.com</a></li>
+            <li><strong>Phone:</strong> +1 (507) 279-4270</li>
+            <li><strong>Email:</strong> dominic.apolo03@gmail.com</li>
+        </ul>
+    </div>
+</body>
+</html>

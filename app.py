@@ -40,7 +40,7 @@ projects = [
 ]
 
 # Brief summary about you
-about_me = "Data Analyst enthusiast with a passion for leveraging data to uncover insights and drive informed decisions."
+about_me = "Data Analyst enthusiast with a passion for leveraging data to uncover insights and drive informed decisions. Graduating in May 2024 with a B.S. in Computer Science from St. Cloud State University. Experienced Software Engineer Intern at Emerson from May 2022 to December 2022. I enjoy programming and thrive on gathering insights from diverse datasets."
 
 # Skills section
 skills = [

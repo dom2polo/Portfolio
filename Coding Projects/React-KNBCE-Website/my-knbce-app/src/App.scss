@@ -1,0 +1,44 @@
+// src/App.scss
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+
+  /* Header styles */
+  &-header {
+    background-color: #2d4059;
+    padding: 20px;
+    color: #f5f5f5;
+
+    .App-logo {
+      height: 80px;
+      pointer-events: none;
+    }
+  }
+
+  /* Main content styles */
+  &-section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+
+  /* Footer styles */
+  &-footer {
+    background-color: #2d4059;
+    color: #f5f5f5;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+}
